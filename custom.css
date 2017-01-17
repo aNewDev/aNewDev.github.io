@@ -1,19 +1,17 @@
-
-#topnav {
-  background-color: #c6d9ec;
-}
-
 #topdesc {
-  padding-top: 120px;
   background-color: #f0f0f0;
 }
 
 #learning {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+}
+
+#checkoff {
+  list-style-type: none;
 }
 
 #vocab {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 #footer {
