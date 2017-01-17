@@ -14,6 +14,9 @@
     <!-- bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- custom modifications to bootstrap -->
+    <link rel="stylesheet" href="custom.css">
+
     <!-- bootstrap jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -24,52 +27,63 @@
 
   <body>
 
+      <div class="navbar navbar-default navbar-fixed-top container" id="topnav">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>aNewDev</h1>
+          </div>
+          <div class="col-md-6 text-right">
+            <h4><a href="https://github.com/aNewDev"><i class="fa fa-github" aria-hidden="true"></i> /aNewDev</a></h4>
+            <h4><a href="https://twitter.com/aNewDev"><i class="fa fa-twitter-square" aria-hidden="true"></i> @aNewDev</a></h4>
+            <h4><a href="https://www.facebook.com/anewdev/"><i class="fa fa-facebook-square" aria-hidden="true"></i> /aNewDev</a></h4>
+          </div>
+        </div>
+      </div>
 
-      <div class="container">
-        <h1>aNewDev</h1>
-        <h4><a href="https://github.com/aNewDev"><i class="fa fa-github" aria-hidden="true"></i> /aNewDev</a></h4>
-        <h4><a href="https://twitter.com/aNewDev"><i class="fa fa-twitter-square" aria-hidden="true"></i> @aNewDev</a></h4>
-        <h4><a href="https://www.facebook.com/anewdev/"><i class="fa fa-facebook-square" aria-hidden="true"></i> /aNewDev</a></h4>
 
+      <div class="container" id="topdesc">
         <p>i am a new developer. posting about experiences as I try to figure out my way.</p>
       </div>
 
-      <div class="container">
-        <h4 id="learning">plan</h4>
-        <p>my learning plan for 2017.</p>
+      <div class="container" id="learning">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>plan</h4>
+            <p>my learning plan for 2017.</p>
 
-        <ul>
-          <li><i class="fa fa-check-square-o" aria-hidden="true"></i> complete the html & css section on <a href="https://www.codecademy.com/learn/learn-html-css">codecademy </a></li>
-          <li><i class="fa fa-check-square-o" aria-hidden="true"></i> complete the javascript section on <a href="https://www.codecademy.com/learn/learn-javascript">codecademy </a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> complete Full Stack web developer on <a href="https://www.freecodecamp.com/anewdev">freeCodeCamp </a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> participate in the <a href="https://www.freecodecamp.com/anewdev">#100DaysOfCode </a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> complete the <a href="http://www.hackreactor.com/prep-programs/">hack reactor prep program </a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> complete the <a href="https://acloud.guru/learn/aws-certified-developer-associate">acloud.guru AWS Certified Developer Associate training </a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> take and pass the <a href="https://aws.amazon.com/certification/certified-developer-associate/">AWS Certified Developer Associate</a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> get accepted to <a href="http://www.hackreactor.com/remote-immersive">hack reactor remote immersive</a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> complete <a href="http://www.hackreactor.com/remote-immersive">hack reactor remote immersive</a></li>
-          <li><i class="fa fa-square-o" aria-hidden="true"></i> reveal my identity, and do real work as a new dev</li>
-        </ul>
+            <ul>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> complete the html & css section on <a href="https://www.codecademy.com/learn/learn-html-css">codecademy </a></li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> complete the javascript section on <a href="https://www.codecademy.com/learn/learn-javascript">codecademy </a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> complete Full Stack web developer on <a href="https://www.freecodecamp.com/anewdev">freeCodeCamp </a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> participate in the <a href="https://www.freecodecamp.com/anewdev">#100DaysOfCode </a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> complete the <a href="http://www.hackreactor.com/prep-programs/">hack reactor prep program </a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> complete the <a href="https://acloud.guru/learn/aws-certified-developer-associate">acloud.guru AWS Certified Developer Associate training </a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> take and pass the <a href="https://aws.amazon.com/certification/certified-developer-associate/">AWS Certified Developer Associate</a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> get accepted to <a href="http://www.hackreactor.com/remote-immersive">hack reactor remote immersive</a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> complete <a href="http://www.hackreactor.com/remote-immersive">hack reactor remote immersive</a></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i> reveal my identity, and do real work as a new dev</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4 id="tools">tools</h4>
+            <p>tools that I am using.</p>
+            <ul>
+              <li><a href="https://angularjs.org/">angular.js</a></li>
+              <li><a href="https://atom.io/">atom</a></li>
+              <li><a href="https://aws.amazon.com/">aws</a></li>
+              <li><a href="https://getbootstrap.com/">bootstrap</a></li>
+              <li><a href="https://codeanywhere.com/">codeanywhere.com</a></li>
+              <li><a href="https://codepen.io/anewdev/">codepen.io</a></li>
+              <li><a href="https://github.com/anewdev">github.com</a></li>
+              <li><a href="https://desktop.github.com/">github desktop</a></li>
+              <li><a href="https://repl.it">repl.it</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="container">
-        <h4 id="tools">tools</h4>
-        <p>tools that I am using.</p>
-        <ul>
-          <li><a href="https://angularjs.org/">angular.js</a></li>
-          <li><a href="https://atom.io/">atom</a></li>
-          <li><a href="https://aws.amazon.com/">aws</a></li>
-          <li><a href="https://getbootstrap.com/">bootstrap</a></li>
-          <li><a href="https://codeanywhere.com/">codeanywhere.com</a></li>
-          <li><a href="https://codepen.io/anewdev/">codepen.io</a></li>
-          <li><a href="https://github.com/anewdev">github.com</a></li>
-          <li><a href="https://desktop.github.com/">github desktop</a></li>
-          <li><a href="https://repl.it">repl.it</a></li>
-        </ul>
-      </div>
-
-      <div class="container">
-        <h4 id="vocab">vocab</h4>
+      <div class="container" id="vocab">
+        <h4>vocab</h4>
         <p>these are my non-code speak definitions of these words.  follow the links for real details.  this is a work in progress.</p>
         <p><a href="https://twitter.com/search?f=tweets&q=%23aNewDevDefines"><i class="fa fa-twitter-square" aria-hidden="true"></i> #aNewDevDefines</a></p>
 
@@ -105,7 +119,10 @@
           <!-- <li><strong>word</strong> - define <a href="#"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li> -->
 
         </ul>
+      </div>
 
+      <div class="container" id="footer">
+          <p class="text-muted">Built with much angst and learning by <a href="https://aNewDev.io" target="_blank">aNewDev</a>. &copy; 2017 aNewDev</p>
       </div>
 
   </body>
