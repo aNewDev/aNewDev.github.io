@@ -1,0 +1,25 @@
+
+#topnav {
+  background-color: #c6d9ec;
+}
+
+#topdesc {
+  padding-top: 120px;
+  background-color: #f0f0f0;
+}
+
+#learning {
+  background-color: #f0f0f0;
+}
+
+#vocab {
+  background-color: #f0f0f0;
+}
+
+#footer {
+  background-color: #c6d9ec;
+}
+
+.text-muted {
+  margin: 20px 0;
+}
