@@ -1,9 +1,13 @@
 body {
-  font-family: 'Special Elite', cursive; 
+  font-family: 'Special Elite', cursive;
 }
 
 .text-muted {
   margin: 20px 0;
+}
+
+#top {
+  margin-top: 20px;
 }
 
 #checkoff {
